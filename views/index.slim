@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    title Exchange Rate client application
+    meta content='width=device-width, initial-scale=1' name='viewport'
+    script src="/js/jquery-3.2.1.min.js"
+    script src="/js/jquery.validate.min.js"
+    script src="/js/app.js"
+    link rel="stylesheet" type="text/css" href="/stylesheets/app.css"
+    link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"
+
+  body
+    div class='wrapper'
+      header
+        h1.large-heading Exchange Rate Library client app
+
+      - if defined?(@outcome)
+        div class="lookup-result lookup-result_#{@outcome}"
+          = @result
+
+      form action='' method='post' id='exchange-rate-lookup'
+        .form-row
+          .form-row__field
+            label for='date' Date
+            input type='text' name='date' placeholder='DD/MM/YYYY'
+
+        .form-row
+          .form-row__field
+            label for='amount' Amount
+            input type='text' name='amount'
+
+        .form-row
+          .form-row__field
+            label for='base' Base currency
+            select name='base'
+              option value='' Please select
+              - @currencies.each do |currency|
+                option value="#{currency}" #{currency}
+
+        .form-row
+          .form-row__field
+            label for='counter' Counter currency
+            select name='counter'
+              option value='' Please select
+              - @currencies.each do |currency|
+                option value="#{currency}" #{currency}
+
+        .form-row
+          .form-row__field
+            button type='submit' Convert!
+

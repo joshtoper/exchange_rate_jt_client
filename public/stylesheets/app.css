@@ -1,0 +1,83 @@
+@import url(reset.css);
+.large-heading {
+  font-size: 36px; }
+
+.medium-heading {
+  font-size: 24px; }
+
+form {
+  margin-top: 25px; }
+
+.form-row {
+  margin-bottom: 20px; }
+  .form-row__field {
+    display: flex;
+    align-items: center; }
+    .form-row__field > label {
+      width: 200px; }
+
+input[type='text'] {
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  border: solid 1px #BDB4BF;
+  padding: 10px 8px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  vertical-align: top;
+  width: 184px; }
+
+button[type='submit'] {
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 9px 15px;
+  cursor: pointer;
+  background: #00c78c;
+  color: #ffffff;
+  margin-left: 200px;
+  width: 200px;
+  box-shadow: 0;
+  border: 0;
+  font-size: 16px; }
+  button[type='submit']:hover {
+    background: #87C29A; }
+
+select, select > option {
+  height: 41px;
+  background-color: #fbfbfb;
+  width: 200px;
+  font-size: 16px; }
+
+label.error {
+  margin-left: 10px;
+  color: #ff0000; }
+
+body {
+  background: #EFF2EF;
+  font-family: "Rubik";
+  color: #323232; }
+
+.wrapper {
+  background: #D9D9D9;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 10px; }
+
+.lookup-result {
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center; }
+  .lookup-result_failure {
+    background: #d98181;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    padding-left: 10px; }
+  .lookup-result_success {
+    font-size: 24px; }
+
+/*# sourceMappingURL=app.css.map */

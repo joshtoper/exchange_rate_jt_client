@@ -1,7 +1,7 @@
 web:
   build: .
-  command: bundle exec ruby app.rb
-  ports:
-    - "4567:4567"
+  command: bundle exec rackup
   volumes:
     - .:/exchange_rate_jt_client
+  ports:
+    - "4567:4567"
