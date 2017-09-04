@@ -9,6 +9,7 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'slim'
 gem 'whenever', require: false
+gem 'thin'
 
 group :development do
   gem 'rubocop'
