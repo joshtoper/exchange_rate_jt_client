@@ -1,7 +1,0 @@
-web:
-  build: .
-  command: bundle exec rackup
-  volumes:
-    - .:/exchange_rate_jt_client
-  ports:
-    - "4567:4567"

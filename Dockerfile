@@ -6,7 +6,10 @@ ENV APP_HOME /app
 RUN mkdir $APP_HOME  
 WORKDIR $APP_HOME
 
-ADD Gemfile* $APP_HOME/  
+ADD Gemfile* $APP_HOME/
 RUN bundle install
 
 ADD . $APP_HOME
+
+EXPOSE 3000
+CMD ["bundle", "exec", "rackup", "-p", "3000"]
