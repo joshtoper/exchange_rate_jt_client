@@ -22,4 +22,13 @@ class App < Sinatra::Base
       slim :index
     end
   end
+
+  post '/update_exchange_rates' do
+    begin
+      ExchangeRateJt.update_exchange_rates
+      status 200
+    rescue
+      status 500
+    end
+  end
 end

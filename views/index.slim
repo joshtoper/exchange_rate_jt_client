@@ -13,6 +13,12 @@ html
     div class='wrapper'
       header
         h1.large-heading Exchange Rate Library client app
+      
+      p 
+        'For the purposes of the test,
+        a href='/update_exchange_rates' class='update-rates' click here 
+        ' to update the exchange rates.
+
 
       - if defined?(@outcome)
         div class="lookup-result lookup-result_#{@outcome}"

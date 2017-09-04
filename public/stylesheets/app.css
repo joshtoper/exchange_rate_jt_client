@@ -5,6 +5,13 @@
 .medium-heading {
   font-size: 24px; }
 
+p {
+  margin: 10px 0; }
+
+a {
+  text-decoration: none;
+  color: #00c78c; }
+
 form {
   margin-top: 25px; }
 
