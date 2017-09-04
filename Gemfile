@@ -8,6 +8,7 @@ gem 'sass'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'slim'
+gem 'whenever', require: false
 
 group :development do
   gem 'rubocop'
